@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/micromdm/micromdm/platform/pubsub"
+	"github.com/liuds832/micromdm/platform/pubsub"
 )
 
 func NewPubSub() *Inmem {

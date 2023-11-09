@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package profileproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/profile/internal/profileproto";
+option go_package = "github.com/liuds832/micromdm/platform/profile/internal/profileproto";
 
 message Profile {
 	string id = 1;

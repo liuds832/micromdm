@@ -6,7 +6,7 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/micromdm/micromdm/platform/user/internal/userproto"
+	"github.com/liuds832/micromdm/platform/user/internal/userproto"
 )
 
 type User struct {

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package commandqueued;
 
-option go_package = "github.com/micromdm/micromdm/platform/queue/internal/commandqueued";
+option go_package = "github.com/liuds832/micromdm/platform/queue/internal/commandqueued";
 
 message CommandQueued {
     string device_udid = 1;

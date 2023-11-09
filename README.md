@@ -1,6 +1,6 @@
 # MicroMDM - a devops friendly MDM server 
 
-[![CI](https://github.com/micromdm/micromdm/workflows/CI/badge.svg)](https://github.com/micromdm/micromdm/actions)
+[![CI](https://github.com/liuds832/micromdm/workflows/CI/badge.svg)](https://github.com/liuds832/micromdm/actions)
 
 MicroMDM is a Mobile Device Management server for Apple Devices, focused on giving you all the power through an API. 
 

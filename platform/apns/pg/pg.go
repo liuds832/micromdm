@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 	sq "gopkg.in/Masterminds/squirrel.v1"
 
-	"github.com/micromdm/micromdm/platform/apns"
+	"github.com/liuds832/micromdm/platform/apns"
 )
 
 type Postgres struct{ db *sqlx.DB }

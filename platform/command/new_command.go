@@ -12,8 +12,8 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 
-	"github.com/micromdm/micromdm/mdm/mdm"
-	"github.com/micromdm/micromdm/pkg/httputil"
+	"github.com/liuds832/micromdm/mdm/mdm"
+	"github.com/liuds832/micromdm/pkg/httputil"
 )
 
 const (

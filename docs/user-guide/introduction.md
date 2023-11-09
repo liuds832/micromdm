@@ -6,7 +6,7 @@ Once you join Slack, the following channels will be useful.
 - `#micromdm` for MicroMDM specific questions.
 - `#mdm` and `#dep` for generic questions about MDM and deployment programs.
 
-For defects and feature requests, please [open an issue](https://github.com/micromdm/micromdm/issues/new).
+For defects and feature requests, please [open an issue](https://github.com/liuds832/micromdm/issues/new).
 
 # Not a product!
 

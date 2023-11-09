@@ -7,7 +7,7 @@ import (
 	"github.com/go-kit/kit/log"
 	httptransport "github.com/go-kit/kit/transport/http"
 
-	"github.com/micromdm/micromdm/pkg/httputil"
+	"github.com/liuds832/micromdm/pkg/httputil"
 )
 
 func NewHTTPClient(instance, token string, logger log.Logger, opts ...httptransport.ClientOption) (Service, error) {

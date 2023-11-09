@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/micromdm/micromdm/platform/device"
+	"github.com/liuds832/micromdm/platform/device"
 )
 
 func (cmd *removeCommand) removeDevices(args []string) error {

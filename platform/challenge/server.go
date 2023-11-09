@@ -7,7 +7,7 @@ import (
 	"github.com/go-kit/kit/endpoint"
 	httptransport "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
-	"github.com/micromdm/micromdm/pkg/httputil"
+	"github.com/liuds832/micromdm/pkg/httputil"
 )
 
 type Endpoints struct {

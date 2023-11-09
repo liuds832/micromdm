@@ -6,8 +6,8 @@ import (
 	"github.com/google/uuid"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/micromdm/micromdm/dep"
-	"github.com/micromdm/micromdm/platform/dep/sync/internal/depsyncproto"
+	"github.com/liuds832/micromdm/dep"
+	"github.com/liuds832/micromdm/platform/dep/sync/internal/depsyncproto"
 )
 
 type Event struct {

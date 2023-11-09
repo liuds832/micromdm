@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"net/textproto"
 
-	"github.com/micromdm/micromdm/pkg/httputil"
+	"github.com/liuds832/micromdm/pkg/httputil"
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/smallstep/pkcs7"

@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/boltdb/bolt"
-	"github.com/micromdm/micromdm/platform/blueprint"
-	profile "github.com/micromdm/micromdm/platform/profile/builtin"
+	"github.com/liuds832/micromdm/platform/blueprint"
+	profile "github.com/liuds832/micromdm/platform/profile/builtin"
 )
 
 func TestSave(t *testing.T) {

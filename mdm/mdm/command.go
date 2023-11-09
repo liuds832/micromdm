@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
-	"github.com/micromdm/micromdm/mdm/appmanifest"
+	"github.com/liuds832/micromdm/mdm/appmanifest"
 )
 
 type CommandRequest struct {

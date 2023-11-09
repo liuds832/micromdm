@@ -12,10 +12,10 @@ import (
 	"text/tabwriter"
 
 	"github.com/go-kit/kit/log"
-	"github.com/micromdm/micromdm/pkg/crypto"
-	"github.com/micromdm/micromdm/platform/blueprint"
-	"github.com/micromdm/micromdm/platform/device"
-	"github.com/micromdm/micromdm/platform/profile"
+	"github.com/liuds832/micromdm/pkg/crypto"
+	"github.com/liuds832/micromdm/platform/blueprint"
+	"github.com/liuds832/micromdm/platform/device"
+	"github.com/liuds832/micromdm/platform/profile"
 	"github.com/pkg/errors"
 )
 

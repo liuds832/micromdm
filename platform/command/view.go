@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/gorilla/mux"
-	"github.com/micromdm/micromdm/mdm"
+	"github.com/liuds832/micromdm/mdm"
 	"github.com/pkg/errors"
 )
 

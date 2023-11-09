@@ -1,6 +1,6 @@
 MicroMDM is intended to be a dependency for implementing a higher level workflow. To do so, it exposes all its capabilities through an HTTP API and also forwards all the device responses to an HTTP endpoint of your choice. 
 
-For examples of what you can do with the API, reference the [tools/api](https://github.com/micromdm/micromdm/tree/main/tools/api) directory of the micromdm repository. The directory includes executable `curl` examples of API requests which you can run, but also reference when implementing an API client in another language.
+For examples of what you can do with the API, reference the [tools/api](https://github.com/liuds832/micromdm/tree/main/tools/api) directory of the micromdm repository. The directory includes executable `curl` examples of API requests which you can run, but also reference when implementing an API client in another language.
 
 Throughout this document we will reference the provided scripts as shorthand for making API requests.
 
@@ -224,7 +224,7 @@ MicroMDM will convert this request into a complete command, and schedule it on t
 
 # Schedule Raw Commands with the API
 
-[PR #864](https://github.com/micromdm/micromdm/pull/864) added support for queuing raw plist commands. This is useful for queuing commands that aren't currently supported (e.g. missing commands or missing fields) by MicroMDM and can also help migrate to NanoMDM.
+[PR #864](https://github.com/liuds832/micromdm/pull/864) added support for queuing raw plist commands. This is useful for queuing commands that aren't currently supported (e.g. missing commands or missing fields) by MicroMDM and can also help migrate to NanoMDM.
 
 The raw command endpoint differs from the main command endpoint in the following ways:
 
@@ -284,7 +284,7 @@ Which can then be modified (or not) and used with the above `raw_command` script
 
 ## Clearing the Command Queue
 
-Since the raw command api endpoint doesn't validate the body as a valid command, it's possible to queue a malformed command, which may cause the client device to stop processing commands from the queue. [PR #864](https://github.com/micromdm/micromdm/pull/864) also includes an endpoint to clear the command queue for a device:
+Since the raw command api endpoint doesn't validate the body as a valid command, it's possible to queue a malformed command, which may cause the client device to stop processing commands from the queue. [PR #864](https://github.com/liuds832/micromdm/pull/864) also includes an endpoint to clear the command queue for a device:
 
 ```
 DELETE /v1/commands/<udid> HTTP/1.1
@@ -297,7 +297,7 @@ A helper script is also available at `./tools/api/clear_queue`:
 
 # Inspecting the Command Queue
 
-[PR #895](https://github.com/micromdm/micromdm/pull/895) added support for inspecting the command queue, which can be useful when diagnosing issues with commands.
+[PR #895](https://github.com/liuds832/micromdm/pull/895) added support for inspecting the command queue, which can be useful when diagnosing issues with commands.
 
 Assuming the example command from [Schedule Raw Commands with the API](#schedule-raw-commands-with-the-api) is in the command queue, inspecting the queue looks like:
 

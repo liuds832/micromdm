@@ -9,7 +9,7 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
 
-	"github.com/micromdm/micromdm/mdm"
+	"github.com/liuds832/micromdm/mdm"
 )
 
 type UDIDCertAuthStore interface {

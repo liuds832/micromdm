@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package removeproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/remove/internal/removeproto";
+option go_package = "github.com/liuds832/micromdm/platform/remove/internal/removeproto";
 
 message Device {
     string udid = 1;

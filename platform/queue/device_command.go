@@ -6,7 +6,7 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/micromdm/micromdm/platform/queue/internal/devicecommandproto"
+	"github.com/liuds832/micromdm/platform/queue/internal/devicecommandproto"
 )
 
 type Command struct {

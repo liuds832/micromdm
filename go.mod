@@ -1,4 +1,4 @@
-module github.com/micromdm/micromdm
+module github.com/liuds832/micromdm
 
 require (
 	github.com/RobotsAndPencils/buford v0.14.0

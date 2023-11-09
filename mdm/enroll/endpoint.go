@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/micromdm/micromdm/pkg/crypto"
-	"github.com/micromdm/micromdm/platform/profile"
+	"github.com/liuds832/micromdm/pkg/crypto"
+	"github.com/liuds832/micromdm/platform/profile"
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/micromdm/scep/v2/depot"

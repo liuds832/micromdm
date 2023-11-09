@@ -5,7 +5,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/micromdm/micromdm/mdm/internal/connectproto"
+	"github.com/liuds832/micromdm/mdm/internal/connectproto"
 )
 
 type AcknowledgeEvent struct {
