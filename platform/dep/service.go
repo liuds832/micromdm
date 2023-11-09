@@ -24,6 +24,7 @@ type DEPClient interface {
 	FetchProfile(string) (*dep.Profile, error)
 	Account() (*dep.Account, error)
 	DeviceDetails(...string) (*dep.DeviceDetailsResponse, error)
+	ActivationLock(*dep.ActivationLockRequest) (*dep.ActivationLockResponse, error)
 }
 
 type DEPService struct {
