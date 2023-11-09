@@ -10,7 +10,7 @@ import (
 	"github.com/go-kit/kit/log"
 	"github.com/kolide/kit/dbutil"
 	_ "github.com/lib/pq"
-	"github.com/micromdm/micromdm/platform/apns"
+	"github.com/liuds832/micromdm/platform/apns"
 )
 
 func TestPGCrud(t *testing.T) {

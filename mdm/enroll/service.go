@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/micromdm/micromdm/platform/config"
-	"github.com/micromdm/micromdm/platform/profile"
-	"github.com/micromdm/micromdm/platform/pubsub"
+	"github.com/liuds832/micromdm/platform/config"
+	"github.com/liuds832/micromdm/platform/profile"
+	"github.com/liuds832/micromdm/platform/pubsub"
 	"github.com/micromdm/scep/v2/challenge"
 
 	"github.com/groob/plist"

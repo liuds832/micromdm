@@ -7,13 +7,13 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
 
-	mdmsvc "github.com/micromdm/micromdm/mdm"
-	"github.com/micromdm/micromdm/mdm/mdm"
-	"github.com/micromdm/micromdm/platform/command"
-	"github.com/micromdm/micromdm/platform/device"
-	"github.com/micromdm/micromdm/platform/profile"
-	"github.com/micromdm/micromdm/platform/pubsub"
-	"github.com/micromdm/micromdm/platform/user"
+	mdmsvc "github.com/liuds832/micromdm/mdm"
+	"github.com/liuds832/micromdm/mdm/mdm"
+	"github.com/liuds832/micromdm/platform/command"
+	"github.com/liuds832/micromdm/platform/device"
+	"github.com/liuds832/micromdm/platform/profile"
+	"github.com/liuds832/micromdm/platform/pubsub"
+	"github.com/liuds832/micromdm/platform/user"
 )
 
 type BlueprintWorkerStore interface {
@@ -84,9 +84,9 @@ func (w *Worker) Run(ctx context.Context) error {
 // TODO: See notes from here:
 // https://github.com/jessepeterson/micromdm/blob/8b068ac98d06954bb3e08b1557c193007932552b/blueprint/listener.go#L73-L103
 // Also see discussion here for general direction:
-// https://github.com/micromdm/micromdm/pull/149
+// https://github.com/liuds832/micromdm/pull/149
 // Finally see discussion here for high-level goals:
-// https://github.com/micromdm/micromdm/issues/110
+// https://github.com/liuds832/micromdm/issues/110
 func (w *Worker) handleTokenUpdateEvent(ctx context.Context, message []byte) error {
 	var ev mdmsvc.CheckinEvent
 	if err := mdmsvc.UnmarshalCheckinEvent(message, &ev); err != nil {

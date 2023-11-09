@@ -2,9 +2,9 @@
 package command
 
 import (
-	mdmsvc "github.com/micromdm/micromdm/mdm"
-	"github.com/micromdm/micromdm/mdm/mdm"
-	"github.com/micromdm/micromdm/platform/pubsub"
+	mdmsvc "github.com/liuds832/micromdm/mdm"
+	"github.com/liuds832/micromdm/mdm/mdm"
+	"github.com/liuds832/micromdm/platform/pubsub"
 	"golang.org/x/net/context"
 )
 

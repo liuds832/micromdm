@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package configproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/config/internal/configproto";
+option go_package = "github.com/liuds832/micromdm/platform/config/internal/configproto";
 
 message ServerConfig {
     bytes push_certificate = 1;

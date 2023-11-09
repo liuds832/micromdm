@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package blueprintproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/blueprint/internal/blueprintproto";
+option go_package = "github.com/liuds832/micromdm/platform/blueprint/internal/blueprintproto";
 
 message Blueprint {
 	reserved 4;

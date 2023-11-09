@@ -24,7 +24,7 @@ type DeclarativeManagement interface {
 
 func (svc *MDMService) Checkin(ctx context.Context, event CheckinEvent) ([]byte, error) {
 	// reject user settings at the loginwindow.
-	// https://github.com/micromdm/micromdm/pull/379
+	// https://github.com/liuds832/micromdm/pull/379
 	if event.Command.MessageType == "UserAuthenticate" {
 		return nil, &rejectUserAuth{}
 	}

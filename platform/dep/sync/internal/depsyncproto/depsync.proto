@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package depsyncproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/dep/sync/internal/depsyncproto";
+option go_package = "github.com/liuds832/micromdm/platform/dep/sync/internal/depsyncproto";
 
 message Event {
 	string  id = 1;

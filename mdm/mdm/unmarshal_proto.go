@@ -1,8 +1,8 @@
 package mdm
 
 import (
-	"github.com/micromdm/micromdm/mdm/appmanifest"
-	"github.com/micromdm/micromdm/mdm/mdm/internal/mdmproto"
+	"github.com/liuds832/micromdm/mdm/appmanifest"
+	"github.com/liuds832/micromdm/mdm/mdm/internal/mdmproto"
 
 	"google.golang.org/protobuf/proto"
 )

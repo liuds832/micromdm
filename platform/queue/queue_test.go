@@ -8,7 +8,7 @@ import (
 
 	"github.com/boltdb/bolt"
 	"github.com/go-kit/kit/log"
-	"github.com/micromdm/micromdm/mdm"
+	"github.com/liuds832/micromdm/mdm"
 )
 
 func TestNext_Error(t *testing.T) {

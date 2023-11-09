@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pushproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/push/internal/pushproto";
+option go_package = "github.com/liuds832/micromdm/platform/push/internal/pushproto";
 
 message PushInfo {
     string udid = 1;

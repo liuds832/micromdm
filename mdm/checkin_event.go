@@ -6,7 +6,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/micromdm/micromdm/mdm/internal/checkinproto"
+	"github.com/liuds832/micromdm/mdm/internal/checkinproto"
 )
 
 type CheckinEvent struct {

@@ -28,7 +28,7 @@ You can also make this profile the default for all devices in your linked DEP se
 mdmctl apply dep-profiles -f /path/to/dep-profile.json -filter='*'
 ```
 
-For more details on auto-assignment, [check](https://github.com/micromdm/micromdm/wiki/DEP-auto-assignment) the wiki page.
+For more details on auto-assignment, [check](https://github.com/liuds832/micromdm/wiki/DEP-auto-assignment) the wiki page.
 
 # Replacing the default Enrollment Profile
 
@@ -53,7 +53,7 @@ Now, the profile is still offered at `/mdm/enroll`, but is the customized one.
 
 # OTA Enrollment
 
-For Over-the-Air profile delivery, [check out notes](https://github.com/micromdm/micromdm/wiki/OTA-Enrollment) from the wiki. 
+For Over-the-Air profile delivery, [check out notes](https://github.com/liuds832/micromdm/wiki/OTA-Enrollment) from the wiki. 
 
 # A custom enrollment endpoint
 

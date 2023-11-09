@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/micromdm/micromdm/platform/command"
+	"github.com/liuds832/micromdm/platform/command"
 )
 
 const testRawCmd = `<?xml version="1.0" encoding="UTF-8"?>

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package commandproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/command/internal/commandproto";
+option go_package = "github.com/liuds832/micromdm/platform/command/internal/commandproto";
 
 message Event {
        	string id = 1;

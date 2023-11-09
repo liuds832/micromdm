@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package checkinproto;
 
-option go_package = "github.com/micromdm/micromdm/mdm/internal/checkinproto";
+option go_package = "github.com/liuds832/micromdm/mdm/internal/checkinproto";
 
 message Event {
        	string  id = 1;

@@ -9,8 +9,8 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/pkg/errors"
 
-	"github.com/micromdm/micromdm/mdm"
-	"github.com/micromdm/micromdm/platform/pubsub"
+	"github.com/liuds832/micromdm/mdm"
+	"github.com/liuds832/micromdm/platform/pubsub"
 )
 
 type Event struct {

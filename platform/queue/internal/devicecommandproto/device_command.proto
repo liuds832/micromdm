@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package devicecommandproto;
 
-option go_package = "github.com/micromdm/micromdm/platform/queue/internal/devicecommandproto";
+option go_package = "github.com/liuds832/micromdm/platform/queue/internal/devicecommandproto";
 
 message Command {
     string uuid = 1;

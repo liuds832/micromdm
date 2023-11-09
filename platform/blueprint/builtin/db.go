@@ -8,8 +8,8 @@ import (
 	"github.com/boltdb/bolt"
 	"github.com/pkg/errors"
 
-	"github.com/micromdm/micromdm/platform/blueprint"
-	"github.com/micromdm/micromdm/platform/profile"
+	"github.com/liuds832/micromdm/platform/blueprint"
+	"github.com/liuds832/micromdm/platform/profile"
 )
 
 const (

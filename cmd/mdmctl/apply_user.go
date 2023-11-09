@@ -11,8 +11,8 @@ import (
 	"github.com/groob/plist"
 	"github.com/pkg/errors"
 
-	"github.com/micromdm/micromdm/pkg/crypto/password"
-	"github.com/micromdm/micromdm/platform/user"
+	"github.com/liuds832/micromdm/pkg/crypto/password"
+	"github.com/liuds832/micromdm/platform/user"
 )
 
 func (cmd *applyCommand) applyUser(args []string) error {

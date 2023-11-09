@@ -1,17 +1,17 @@
-## [Unreleased](https://github.com/micromdm/micromdm/compare/v1.11.0...main)
+## [Unreleased](https://github.com/liuds832/micromdm/compare/v1.11.0...main)
 
 - Add `-log-time` flag to include timestamps in log messages (#890)
 - Add `-device-signature-skew` flag to allow configuring clock skew when verifying device signatures (#887)
 - Tidy code for Go 1.20 and update Go version for Docker and CI (#902)
 - Add support for inspecting the MDM command queue (#895)
-  - See the [docs](https://github.com/micromdm/micromdm/blob/main/docs/user-guide/api-and-webhooks.md#inspecting-the-command-queue) for how to use
+  - See the [docs](https://github.com/liuds832/micromdm/blob/main/docs/user-guide/api-and-webhooks.md#inspecting-the-command-queue) for how to use
 - Fix HTTP status codes being swallowed by -http-debug flag (#906)
 - Fix pkg signature checks on non-macOS platforms (#930)
 - Project dependency updates (#888, #889, #900)
 
 Thanks to our contributors: @grahamgilbert, @jamesez, @korylprince
 
-## [v1.11.0](https://github.com/micromdm/micromdm/compare/v1.10.1...v1.11.0)
+## [v1.11.0](https://github.com/liuds832/micromdm/compare/v1.10.1...v1.11.0)
 
 This release includes new features and fixes.
 
@@ -19,23 +19,23 @@ Thanks to our contributors: @williamtheaker, @korylprince, @krmzbbr
 
 - Add Dependabot updating (#857)
 - Add SoftwareUpdateSettings to Settings command (#771, #856)
-- Add tools script [install_vpp_application](https://github.com/micromdm/micromdm/blob/main/tools/api/commands/install_vpp_application) to install VPP apps (#865)
+- Add tools script [install_vpp_application](https://github.com/liuds832/micromdm/blob/main/tools/api/commands/install_vpp_application) to install VPP apps (#865)
   - Note MicroMDM doesn't support VPP/A&B itself.
 - Fix bug that prevented errors being logged on the Checkin and Connect endpoints (#871)
 - Add support for submitting "raw" plist MDM commands! (#864)
-  - See the [docs](https://github.com/micromdm/micromdm/blob/main/docs/user-guide/api-and-webhooks.md#schedule-raw-commands-with-the-api) for how to use!
+  - See the [docs](https://github.com/liuds832/micromdm/blob/main/docs/user-guide/api-and-webhooks.md#schedule-raw-commands-with-the-api) for how to use!
 - Add [NanoMDM](https://github.com/micromdm/nanomdm)-compatible Declarative Device Management (DDM) "proxy" support. (#882)
   - Use the `-dm` switch to extract and forward the Declarative Management protocol Endpoints to a specialized HTTP server. Such as [KMFDDM](https://github.com/jessepeterson/kmfddm).
   - Check out the older [blog post about DDM](https://micromdm.io/blog/wwdc21-declarative-management/) for more info.
 - Project dependency updates (#858, #859, #860, #861, #867, #869, #873, #872, #874, #875, #879)
 
-## [v1.10.1](https://github.com/micromdm/micromdm/compare/v1.10.0...v1.10.1) January 24, 2023
+## [v1.10.1](https://github.com/liuds832/micromdm/compare/v1.10.0...v1.10.1) January 24, 2023
 
 Patch release. Thanks to our contributors: @korylprince
 
 - Fix certificate check for DEP and OTA enrollment attempts (#854, #855)
 
-## [v1.10.0](https://github.com/micromdm/micromdm/compare/v1.9.0...v1.10.0) January 13, 2023
+## [v1.10.0](https://github.com/liuds832/micromdm/compare/v1.9.0...v1.10.0) January 13, 2023
 
 This release includes new features and fixes.
 
@@ -54,7 +54,7 @@ Thanks to our contributors for this release: @networkpanic, @meta-github, @koryl
 - Switch to using [cfgprofiles](https://github.com/jessepeterson/cfgprofiles) for enrollment profile generation (#827)
 - Documentation & CLI usage improvements (#799, #811, #817, #819, #823)
 
-## [v1.9.0](https://github.com/micromdm/micromdm/compare/v1.8.0...v1.9.0) January 27, 2022
+## [v1.9.0](https://github.com/liuds832/micromdm/compare/v1.8.0...v1.9.0) January 27, 2022
 
 - Add new fields for the ScheduleOSUpdate command (#793)
 - Use HTTPS for retrieving Apple certificates (#792)
@@ -77,7 +77,7 @@ Thanks to our contributors for this release: @networkpanic, @meta-github, @koryl
 
 Thanks to our contributors for this release: @discentem, @korylprince, @williamtheaker, @bpmcneilly, @daemonsy, @tomaswallentinus, @ivanhata, @networkpanic, @HernanPaez
 
-## [v1.9.0-beta](https://github.com/micromdm/micromdm/compare/v1.8.0...v1.9.0-beta) October, 2021
+## [v1.9.0-beta](https://github.com/liuds832/micromdm/compare/v1.8.0...v1.9.0-beta) October, 2021
 
 - Replace gogo/protobuf with Google protobuf (#773)
 - Add GHCR container workflow. Add ARM build. (#745)
@@ -96,7 +96,7 @@ Thanks to our contributors for this release: @discentem, @korylprince, @williamt
 
 Thanks to our contributors for this release: @discentem, @korylprince, @williamtheaker, @bpmcneilly, @daemonsy, @ivanhata
 
-## [v1.8.0](https://github.com/micromdm/micromdm/compare/v1.7.1...v1.8.0) February, 2021
+## [v1.8.0](https://github.com/liuds832/micromdm/compare/v1.7.1...v1.8.0) February, 2021
 
 - Fix embedded manifest of InstallEnterpriseApplication (#669)
 - Added Activation Lock Bypass support code (#677)
@@ -107,7 +107,7 @@ Thanks to our contributors for this release: @discentem, @korylprince, @williamt
 - A device's command queue is now cleared during enrollment (#692)
 - APNS is now proxy aware (#698)
 - Add `-validate-scep-issuer` and `-validate-scep-expiration` flags to only validate the SCEP certificate was issued by the MicrMDM SCEP CA, and optionally to validate that the certificate hasn't expired (#700)
-- Add `-udid-cert-auth-warn-only` flag that disables the UDID-certificate authentication mechanism. Can be used to help remediate [expiring device identity certificates](https://github.com/micromdm/micromdm/wiki/Device-Identity-Certificate-Expiration) (#643)
+- Add `-udid-cert-auth-warn-only` flag that disables the UDID-certificate authentication mechanism. Can be used to help remediate [expiring device identity certificates](https://github.com/liuds832/micromdm/wiki/Device-Identity-Certificate-Expiration) (#643)
 - Fix for multiple InstallApplications in Blueprints (#549, #704)
 - More secure argument passing in API scripts (#709)
 - TimeZone setting support in Settings command (#719)
@@ -118,7 +118,7 @@ Thanks to our contributors for this release: @discentem, @korylprince, @williamt
 
 Thanks to our contributors for this release: @MobileDan, @meta-gitub, @grahamgilbert, @tperfitt, @williamtheaker, @slawoslawo, @choehn-signogy, @natewalck, @korylprince
 
-## [v1.7.1](https://github.com/micromdm/micromdm/compare/v1.7.0-alpha...v1.7.1) April, 2020
+## [v1.7.1](https://github.com/liuds832/micromdm/compare/v1.7.0-alpha...v1.7.1) April, 2020
 
 - Replace un-maintained UUID dependency (#665)
 - Correctly handle DEP profile removal response (#666)
@@ -128,7 +128,7 @@ Thanks to our contributors for this release: @MobileDan, @meta-gitub, @grahamgil
 
 Thanks to our contributors for this release: @bdemetris, @tricknotes, @netproteus
 
-## [v1.7.0-alpha](https://github.com/micromdm/micromdm/compare/v1.6.0...v1.7.0-alpha) March, 2020
+## [v1.7.0-alpha](https://github.com/liuds832/micromdm/compare/v1.6.0...v1.7.0-alpha) March, 2020
 
 ### Reliability, scalability, security, and usability improvements:
 
@@ -145,7 +145,7 @@ Thanks to our contributors for this release: @bdemetris, @tricknotes, @netproteu
 
 Thanks to our contributors for this release: @grahamgilbert, @n8felton, @tomaswallentinus
 
-## [v1.6.0](https://github.com/micromdm/micromdm/compare/v1.5.0...v1.6.0) August 14, 2019
+## [v1.6.0](https://github.com/liuds832/micromdm/compare/v1.5.0...v1.6.0) August 14, 2019
 
 ### Go security update along with updates:
 
@@ -158,7 +158,7 @@ Thanks to our contributors for this release: @grahamgilbert, @n8felton, @tomaswa
 
 Thanks to our contributors for this release: @WardsParadox, @n8felton
 
-## [v1.5.0](https://github.com/micromdm/micromdm/compare/v1.4.0...v1.5.0) June 15 2019
+## [v1.5.0](https://github.com/liuds832/micromdm/compare/v1.4.0...v1.5.0) June 15 2019
 
 - Fix DEP token update issue (#513, #510)
 - Refactor certificate verification and implement UDID-cert authentication (#358, #429)
@@ -176,7 +176,7 @@ Thanks to our contributors for this release: @WardsParadox, @n8felton
 
 Thanks to our contributors for this release: @discentem, @nkllkc, @arubdesu, @bdemetris, @Lepidopteron, @joncrain, @emman27, @jenjac, @daniellockard, and @0xflotus
 
-## [v1.4.0](https://github.com/micromdm/micromdm/compare/v1.3.1...v1.4.0) September 6 2018
+## [v1.4.0](https://github.com/liuds832/micromdm/compare/v1.3.1...v1.4.0) September 6 2018
 
 ### Stability Improvements
 
@@ -195,7 +195,7 @@ Thanks to our contributors for this release: @discentem, @nkllkc, @arubdesu, @bd
 
 Thanks to our contributors for this release: @erikng, @gerardkok, @knightsc, @marpaia, and @ochimo!
 
-## [v1.3.1](https://github.com/micromdm/micromdm/compare/v1.3.0...v1.3.1) July 10 2018
+## [v1.3.1](https://github.com/liuds832/micromdm/compare/v1.3.0...v1.3.1) July 10 2018
 
 - Update base container to Alpine 3.7 (#437)
 - Fix bugs in SCEP enrollment (#451)
@@ -203,7 +203,7 @@ Thanks to our contributors for this release: @erikng, @gerardkok, @knightsc, @ma
 - Add device_information and security_info commands with curl API (#448)
 - Add support for InstallEnterpriseApplication command (#452)
 
-## [v1.3.0](https://github.com/micromdm/micromdm/compare/v1.2.0...v1.3.0)
+## [v1.3.0](https://github.com/liuds832/micromdm/compare/v1.2.0...v1.3.0)
 
 ### Auto-assigner
 
@@ -235,7 +235,7 @@ Thanks to our contributors for this release: @erikng, @gerardkok, @knightsc, @ma
 - Added support for supplied `depsim` URL. #318
 - Added Dockerfile. #316
 
-## [v1.2.0](https://github.com/micromdm/micromdm/compare/v1.1.0...v1.2.0) October 31 2017
+## [v1.2.0](https://github.com/liuds832/micromdm/compare/v1.1.0...v1.2.0) October 31 2017
 
 ### User Profiles
 
@@ -248,7 +248,7 @@ Thanks to our contributors for this release: @erikng, @gerardkok, @knightsc, @ma
 - Added ENV variables for sensitive flags: `MICROMDM_APNS_KEY_PASSWORD`,`MICROMDM_API_KEY`
 - Removed the `-redir-addr` flag. Redirect to HTTPS is only enabled when the 443 port is used.
 
-## [v1.1.0](https://github.com/micromdm/micromdm/compare/v1.0.0...v1.1.0) June 05 2017
+## [v1.1.0](https://github.com/liuds832/micromdm/compare/v1.0.0...v1.1.0) June 05 2017
 
 ### YVR!
 

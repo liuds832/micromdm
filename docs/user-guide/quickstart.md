@@ -4,7 +4,7 @@ Before proceeding, make sure to read the [Introduction](./introduction.md) page,
 
 # Up and Running with MicroMDM
 
-First, [download](https://github.com/micromdm/micromdm/releases/latest) the latest release of MicroMDM. Copy the `micromdm` binary somewhere in your `$PATH`. 
+First, [download](https://github.com/liuds832/micromdm/releases/latest) the latest release of MicroMDM. Copy the `micromdm` binary somewhere in your `$PATH`. 
 
 Next, run the server binary. 
 
@@ -32,7 +32,7 @@ For example, `-api-key` becomes `MICROMDM_API_KEY`.
 
 **NOTE**: In a production environment, secrets should _always_ be set via environment variables and not CLI flags, so they don't remain in your shell history or server monitoring logs.  
 
-This section described how to start the `micromdm` process interactively in a shell, but that won't persist a server restart or exiting your current session. Having the process remain persistent depends on your environment. Since systemd is a common choice, there are [notes](https://github.com/micromdm/micromdm/wiki/Using-MicroMDM-with-systemd) from users on the wiki. 
+This section described how to start the `micromdm` process interactively in a shell, but that won't persist a server restart or exiting your current session. Having the process remain persistent depends on your environment. Since systemd is a common choice, there are [notes](https://github.com/liuds832/micromdm/wiki/Using-MicroMDM-with-systemd) from users on the wiki. 
 
 # Configure mdmctl
 
