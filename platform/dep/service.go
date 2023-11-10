@@ -15,6 +15,7 @@ type Service interface {
 	GetAccountInfo(ctx context.Context) (*dep.Account, error)
 	GetDeviceDetails(ctx context.Context, serials []string) (*dep.DeviceDetailsResponse, error)
 	FetchProfile(ctx context.Context, uuid string) (*dep.Profile, error)
+	SetActivationLock(ctx context.Context, p *dep.ActivationLockRequest) (*dep.ActivationLockResponse, error)
 }
 
 type DEPClient interface {
