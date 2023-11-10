@@ -45,7 +45,7 @@ func MakeSetActivationLockEndpoint(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 		req := request.(activationLockRequest)
 		resp, err := svc.SetActivationLock(ctx, req.ActivationLockRequest)
-		return activationLockResponse{ActivationLockResponse: details, Err: err}, nil
+		return activationLockResponse{ActivationLockResponse: resp, Err: err}, nil
 	}
 }
 
