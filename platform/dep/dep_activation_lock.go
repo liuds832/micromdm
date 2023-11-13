@@ -9,6 +9,7 @@ import (
 
 	"github.com/liuds832/micromdm/dep"
 	"github.com/liuds832/micromdm/pkg/httputil"
+	"github.com/liuds832/micromdm/pkg/activationlock"
 )
 
 func (svc *DEPService) SetActivationLock(ctx context.Context, p *dep.ActivationLockRequest) (*dep.ActivationLockResponse, error) {
@@ -24,6 +25,7 @@ type activationLockRequest struct {
 
 type activationLockResponse struct {
 	*dep.ActivationLockResponse
+	BypassCode       string `json:"bypasscode"`
 	Err error `json:"err,omitempty"`
 }
 
@@ -44,8 +46,11 @@ func decodeActivationLockResponse(_ context.Context, r *http.Response) (interfac
 func MakeSetActivationLockEndpoint(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 		req := request.(activationLockRequest)
-		resp, err := svc.SetActivationLock(ctx, req.ActivationLockRequest)
-		return activationLockResponse{ActivationLockResponse: resp, Err: err}, nil
+		/*生成Bypass code*/
+		code, cerr := Create()
+		rep.ActivationLockRequest.EscrowKey = code.Hash()
+		resp, err := svc.SetActivationLock(ctx, req.ActivationLockRequest)//调下面Endpoints的SetActivationLock
+		return activationLockResponse{ActivationLockResponse: resp, BypassCode: code.String(), Err: err}, nil
 	}
 }
 
