@@ -46,13 +46,9 @@ func decodeActivationLockResponse(_ context.Context, r *http.Response) (interfac
 func MakeSetActivationLockEndpoint(svc Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
 		/*生成Bypass code*/
-		code, cerr := activationlock.Create(nil)
-		if cerr == nil {
-			return activationLockResponse{ActivationLockResponse: nil, Err: cerr}, nil 
-		}
-
+		code, _ := activationlock.Create(nil)//不带参数时用随机key
 		req := request.(activationLockRequest)
-		req.ActivationLockRequest.EscrowKey = code.Hash()
+		req.ActivationLockRequest.EscrowKey = code.Hash()//EscrowKey传hash
 		resp, err := svc.SetActivationLock(ctx, req.ActivationLockRequest)//调下面Endpoints的SetActivationLock
 		return activationLockResponse{ActivationLockResponse: resp, BypassCode: code.String(), Err: err}, nil
 	}
