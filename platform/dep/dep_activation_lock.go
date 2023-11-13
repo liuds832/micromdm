@@ -48,11 +48,11 @@ func MakeSetActivationLockEndpoint(svc Service) endpoint.Endpoint {
 		/*生成Bypass code*/
 		code, cerr := activationlock.Create(nil)
 		if cerr == nil {
-			return activationLockResponse{nil, Err: cerr}, nil 
+			return activationLockResponse{ActivationLockResponse: nil, Err: cerr}, nil 
 		}
 
 		req := request.(activationLockRequest)
-		rep.ActivationLockRequest.EscrowKey = code.Hash()
+		req.ActivationLockRequest.EscrowKey = code.Hash()
 		resp, err := svc.SetActivationLock(ctx, req.ActivationLockRequest)//调下面Endpoints的SetActivationLock
 		return activationLockResponse{ActivationLockResponse: resp, BypassCode: code.String(), Err: err}, nil
 	}
