@@ -9,7 +9,7 @@ import (
 
 	"github.com/liuds832/micromdm/dep"
 	"github.com/liuds832/micromdm/pkg/httputil"
-	"github.com/liuds832/micromdm/pkg/activationlock"
+	"github.com/micromdm/micromdm/pkg/activationlock"
 )
 
 func (svc *DEPService) SetActivationLock(ctx context.Context, p *dep.ActivationLockRequest) (*dep.ActivationLockResponse, error) {
