@@ -123,6 +123,19 @@ func (w *Worker) updateFromDEPSync(ctx context.Context, message []byte) error {
 				"previously_known", !notSeenBefore,
 			)
 		}
+		//liuds:publish deleted event  add delete from  db
+		if dd.OpType == "deleted" {
+			
+			if err := w.db.DeleteBySerial(ctx, dd.SerialNumber); err != nil {
+				level.Debug(w.logger).Log(
+					"msg", "deleteing devices error",
+					"serial", dd.SerialNumber,
+					"error", err,
+				)
+			}
+			continue
+		}
+		//end
 
 		if dev.UUID == "" {
 			dev.UUID = uuid.New().String()
