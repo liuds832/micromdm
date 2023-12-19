@@ -296,6 +296,10 @@ func (w *Watcher) Run() error {
 				continue
 			}
 		} else {
+			level.Info(w.logger).Log(
+				"msg", "start SyncDevices ",
+				"cursor", w.cursor.Value,
+			)
 			resp, err = w.client.SyncDevices(w.cursor.Value)
 		}
 
