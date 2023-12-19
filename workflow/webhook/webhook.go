@@ -11,6 +11,7 @@ import (
 
 	"github.com/liuds832/micromdm/mdm"
 	"github.com/liuds832/micromdm/platform/pubsub"
+	"github.com/liuds832/micromdm/platform/dep/sync"
 )
 
 type Event struct {
@@ -20,6 +21,7 @@ type Event struct {
 
 	AcknowledgeEvent *AcknowledgeEvent `json:"acknowledge_event,omitempty"`
 	CheckinEvent     *CheckinEvent     `json:"checkin_event,omitempty"`
+	DepSyncEvent	 *sync.Event	   `json:"sync_event,omitempty"`
 }
 
 type Worker struct {
@@ -90,6 +92,12 @@ func (w *Worker) Run(ctx context.Context) error {
 	if err != nil {
 		return errors.Wrapf(err, "subscribe %s to %s", subscription, mdm.SetBootstrapTokenTopic)
 	}
+	// add by liuds : Subscribe device sync
+	depSyncEvents, err := w.sub.Subscribe(ctx, subscription, sync.SyncTopic)
+	if err != nil {
+		return errors.Wrapf(err, "subscribe %s to %s", subscription, sync.SyncTopic)
+	}
+	// end liuds
 
 	for {
 		var (
@@ -111,6 +119,8 @@ func (w *Worker) Run(ctx context.Context) error {
 			event, err = checkinEvent(ev.Topic, ev.Message)
 		case ev := <-setBootstrapTokenEvents:
 			event, err = checkinEvent(ev.Topic, ev.Message)
+		case ev := <-depSyncEvents:
+			event, err = depSyncEvent(ev.Topic, ev.Message)
 		}
 
 		if err != nil {

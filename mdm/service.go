@@ -28,6 +28,8 @@ const (
 	GetBootstrapTokenTopic     = "mdm.GetBootstrapToken"
 	SetBootstrapTokenTopic     = "mdm.SetBootstrapToken"
 	DeclarativeManagementTopic = "mdm.DeclarativeManagement"
+	DeviceAddTopic		   	   = "mdm.DeviceAdd"
+	DeviceDeleteTopic		   = "mdm.DeviceDelete"
 )
 
 // BootBootstrapTokenRetriever retrieves BootStrap Tokens for devices
