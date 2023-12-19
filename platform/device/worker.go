@@ -18,6 +18,7 @@ type DeviceWorkerStore interface {
 	Save(ctx context.Context, d *Device) error
 	DeviceByUDID(ctx context.Context, udid string) (*Device, error)
 	DeviceBySerial(ctx context.Context, serial string) (*Device, error)
+	DeleteBySerial(ctx context.Context, serial string) error
 }
 
 type Worker struct {
